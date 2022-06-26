@@ -140,7 +140,7 @@ dnsmasq
 iptables-nft
 
 # Zram
-zramd
+zramswap
 
 # Backup
 timeshift-bin
