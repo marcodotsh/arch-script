@@ -37,11 +37,6 @@ echo root:$ROOT_PASSWORD | chpasswd
 grub-install --target=x86_64-efi --efi-directory=/boot --boot-directory=/boot --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
-# Start services and timers
-systemctl enable NetworkManager
-systemctl enable reflector.timer
-systemctl enable fstrim.timer
-
 # Symlink vim to vi
 ln -sf /usr/bin/vim /usr/bin/edit
 ln -sf /usr/bin/vim /usr/bin/ex
@@ -65,6 +60,11 @@ echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
 su $USER
 cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | paru -Syy --needed --noconfirm -
 exit
+
+# Start services and timers
+systemctl enable NetworkManager
+systemctl enable reflector.timer
+systemctl enable fstrim.timer
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m\n"
 
