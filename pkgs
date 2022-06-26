@@ -107,7 +107,9 @@ libappindicator-gtk3
 papirus-icon-theme 
 hardcode-tray-git
 sif-git
-plasma5-applets-window-buttons
+plasma5-applets-active-window-control
+plasma5-applets-weather-widget-2
+kwin-bismuth-bin
 
 # Pipewire
 
@@ -137,3 +139,9 @@ edk2-ovmf
 dnsmasq
 iptables-nft
 
+# Zram
+zramd
+
+# Backup
+timeshift
+timeshuft-autosnap
