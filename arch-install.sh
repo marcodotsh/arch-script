@@ -62,7 +62,7 @@ echo $USER:$USER_PASSWORD | chpasswd
 echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
 
 # Install packages
-cat pkgs | grep -v ^# | tr ' ' '\n' | paru -S --needed --noconfirm -
+cat pkgs | grep -v ^# | tr ' ' '\n' | paru -Syy --needed --noconfirm -
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
 
