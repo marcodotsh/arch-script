@@ -1,0 +1,116 @@
+# Xorg
+xorg
+
+# Fonts
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+
+#SDDM
+sddm
+
+# KDE Plasma
+bash-completion
+bluedevil
+breeze
+breeze-grub
+breeze-gtk
+discover flatpak fwupd
+drkonqi
+kactivitymanagerd
+kde-cli-tools
+kde-gtk-config
+kdecoration
+kdeplasma-addons
+kgamma5
+khotkeys
+kinfocenter
+kmenuedit
+kscreen
+kscreenlocker
+ksshaskpass
+ksystemstats
+kwallet-pam
+kwayland-integration
+kwayland-server
+kwin
+kwrited
+layer-shell-qt
+libdecor
+libkscreen
+libksysguard
+milou
+egl-wayland
+plasma-browser-integration
+plasma-desktop
+plasma-disks
+plasma-firewall
+plasma-integration
+plasma-nm
+plasma-pa
+plasma-systemmonitor
+plasma-thunderbolt
+plasma-vault
+plasma-wayland-protocols
+plasma-wayland-session
+plasma-workspace
+plasma-workspace-wallpapers
+polkit-kde-agent
+powerdevil
+sddm-kcm
+systemsettings
+xdg-desktop-portal-kde
+
+# KDE applications
+ark lrzip lzop p7zip unarchiver
+dolphin
+dolphin-plugins
+ffmpegthumbs
+filelight
+gwenview kimageformats qt5-imageformats
+kate
+kcalc
+kcharselect
+kcolorchooser
+kdeconnect sshfs
+kdegraphics-thumbnailers
+kdenetwork-filesharing
+kdepim-addons
+kdialog
+kfind mlocate
+khelpcenter
+kio-extras icoutils kactivities-stats kimageformats libappimage openexr taglib 
+kio-gdrive purpose
+konsole
+korganizer
+kwalletmanager
+markdownpart
+okular
+phonon-qt5 phonon-qt5-vlc
+print-manager system-config-printer
+spectacle
+svgpart
+yakuake
+zeroconf-ioslave
+
+# Plasma appearence
+appmenu-gtk-module
+latte-dock
+libappindicator-gtk3
+papirus-icon-theme 
+hardcode-tray-git
+sif-git
+plasma5-applets-window-buttons
+
+# Pipewire
+lib32-pipewire
+pipewire
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+
+# Nvidia drivers
+nvidia-dkms
+nvidia-utils
+lib32-nvidia-utils
