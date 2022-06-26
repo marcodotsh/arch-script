@@ -57,9 +57,7 @@ echo $USER:$USER_PASSWORD | chpasswd
 echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
 
 # Install packages
-su $USER
-cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | paru -Syy --needed --noconfirm -
-exit
+cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | sudo -u $USER paru -Syy --needed --noconfirm -
 
 # Start services and timers
 systemctl enable NetworkManager
