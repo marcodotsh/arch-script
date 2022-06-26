@@ -37,7 +37,7 @@ ksshaskpass
 ksystemstats
 kwallet-pam
 kwayland-integration
-kwayland-server
+kwayland
 kwin
 kwrited
 layer-shell-qt
