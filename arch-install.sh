@@ -60,7 +60,9 @@ echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
 cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | sudo -u $USER paru -Syy --needed --noconfirm -
 
 # Start services and timers
-systemctl enable NetworkManager
+systemctl enable NetworkManager.service
+systemctl enable zramswap.service
+systemctl enable systemd-oomd.service
 systemctl enable reflector.timer
 systemctl enable fstrim.timer
 
