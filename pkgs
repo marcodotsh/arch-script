@@ -1,16 +1,20 @@
 # Xorg
+
 xorg
 
 # Fonts
+
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
 noto-fonts-extra
 
 #SDDM
+
 sddm
 
 # KDE Plasma
+
 bash-completion
 bluedevil
 breeze
@@ -63,6 +67,7 @@ systemsettings
 xdg-desktop-portal-kde
 
 # KDE applications
+
 ark lrzip lzop p7zip unarchiver
 dolphin
 dolphin-plugins
@@ -95,6 +100,7 @@ yakuake
 zeroconf-ioslave
 
 # Plasma appearence
+
 appmenu-gtk-module
 latte-dock
 libappindicator-gtk3
@@ -104,6 +110,7 @@ sif-git
 plasma5-applets-window-buttons
 
 # Pipewire
+
 lib32-pipewire
 pipewire
 pipewire-alsa
@@ -111,11 +118,22 @@ pipewire-jack
 pipewire-pulse
 
 # Nvidia drivers
+
 nvidia-dkms
 nvidia-utils
 lib32-nvidia-utils
 
-# Virtual machine
+# Virtual machine (guest)
+
 spice-vdagent
 xf86-video-qxl-git
+
+# Virtual machine (host)
+
+virt-manager
+qemu-desktop
+libvirt
+edk2-ovmf
+dnsmasq
+iptables-nft
 
