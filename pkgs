@@ -114,3 +114,8 @@ pipewire-pulse
 nvidia-dkms
 nvidia-utils
 lib32-nvidia-utils
+
+# Virtual machine
+spice-vdagent
+xf86-video-qxl-git
+
