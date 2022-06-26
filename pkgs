@@ -143,5 +143,5 @@ iptables-nft
 zramd
 
 # Backup
-timeshift
+timeshift-bin
 timeshift-autosnap
