@@ -57,7 +57,7 @@ echo $USER:$USER_PASSWORD | chpasswd
 echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
 
 # Install packages
-cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | sudo -u $USER paru -Syy --needed --noconfirm -
+cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | sudo -u $USER paru -Syy --needed -
 
 echo "ZRAM_SIZE_PERCENT=25" > /etc/zramswap.conf
 echo "ZRAM_COMPRESSION_ALGO=ZSTD" >> /etc/zramswap.conf
