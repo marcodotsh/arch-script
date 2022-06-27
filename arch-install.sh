@@ -59,6 +59,9 @@ echo "%wheel ALL=(ALL:ALL) ALL" > /etc/sudoers.d/wheel
 # Install packages
 cat pkgs | grep -v ^# | tr ' ' '\n' | grep . | sudo -u $USER paru -Syy --needed --noconfirm -
 
+echo "ZRAM_SIZE_PERCENT=25" > /etc/zramswap.conf
+echo "ZRAM_COMPRESSION_ALGO=ZSTD" >> /etc/zramswap.conf
+
 # Start services and timers
 systemctl enable NetworkManager.service
 systemctl enable zramswap.service
